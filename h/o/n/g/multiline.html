@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="multiline.css">
+    <script src="http://d3js.org/d3.v4.js" charset="utf-8"></script>
+    <!--<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>-->
+</head>
+<body>
+<div class="chart-wrapper" id="chart-line1"></div>
+
+<script type="text/javascript">
+
+var parseTime = d3.timeParse("%Y-%m-%d");
+
+d3.csv('data/etf_sector.csv', function(error, data) {
+	if ( data.length < 1) {
+		return;
+	}
+
+  	var keyNames = Object.keys(data[0]);
+	
+    data.forEach(function (d) {
+        d.date = parseTime(d.Date);
+        for (var i=0; i<keyNames.length; i++) {
+			var n = keyNames[i];
+        	if ('Date' == n ) {
+        		continue;
+        	}
+        	d['variable' + i] = +d[n];
+        }
+        
+//        d.variableA = +d.PBI;
+//        d.variableB = +d.VFITX;
+//        d.variableC = +d.VGENX;
+//        d.variableD = +d.VMATX;
+    });
+    
+    console.log(data)
+
+    var col = new Object();
+    for (var i=0; i<keyNames.length; i++) {
+    	var n = keyNames[i];
+    	if ('Date' == n ) {
+    		continue;
+    	}
+    	var o = new Object();
+    	o.column = 'variable' + i;
+    	col[n] = o;
+    }    
+    
+    var chart = makeLineChart(data, 'date', col, {xAxis: 'Years', yAxis: 'Amount'});
+  /*  
+    var chart = makeLineChart(data, 'date', {
+        'Variable A': {column: 'variableA'},
+        'Variable B': {column: 'variableB'},
+        'Variable C': {column: 'variableC'},
+        'Variable D': {column: 'variableD'}
+    }, {xAxis: 'Years', yAxis: 'Amount'});
+  */
+    chart.bind("#chart-line1");
+    chart.render();
+});
+</script>
+<script src="multiline.js" charset="utf-8"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="bootstrap.min.css">
+
+<script type='text/javascript'
+	src='https://www.gstatic.com/charts/loader.js'></script>
+<script src="jquery.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="vanguard.js"></script>
+<script src="symbols.js"></script>
+<script src="site.js"></script>
+</head>
+
+<body onload="init();">
+  
+<br/>
+<a href="https://www.coinbase.com/" style="width:75px;"  class="btn btn-primary">Bit</a>
+ &nbsp; &nbsp;
+  &nbsp; &nbsp;
+<a href="http://www.google.com/search?q=Dow" style="width:75px;"  class="btn btn-primary">Dow</a>
+ &nbsp; &nbsp;
+ &nbsp; &nbsp;
+<input type="button" class="btn btn-primary" value="Check" onclick="checkPrice();" />
+
+<br/>
+<br/>
+#
+<div class="btn-group" role="group1">
+  <button type="radio" class="btn btn-info" onclick="setNumOfDataPoint(5);" autofocus="true" >5</button>
+  <button type="radio" class="btn btn-info" onclick="setNumOfDataPoint(7);">7</button>
+  <button type="radio" class="btn btn-info" onclick="setNumOfDataPoint(10);">10</button>
+  <button type="radio" class="btn btn-info" onclick="setNumOfDataPoint(15);">15</button>
+  <button type="radio" class="btn btn-info" onclick="setNumOfDataPoint(100);" >100</button>
+  <button type="radio" class="btn btn-info" onclick="setNumOfDataPoint(1000);" >1000</button>
+</div>
+
+<br/>
+<br/>
+
+<input type="text" size="4" value="DJI PBI" id="symbols" /> &nbsp;
+length: <input type="text" size="4" value="30" id="trendLength" />
+<input type="button" value="Show" onclick="showInputStock();" />
+<div id="showInputDisplayRoot"></div>
+	
+	
+	<br />
+	<div id="symbolList"></div>
+
+</body>
+</html>
