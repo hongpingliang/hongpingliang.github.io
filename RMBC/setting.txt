@@ -1,0 +1,4 @@
+# web service URL
+
+service_url=http://204.236.219.24/IMSWS/AllService.ws
+

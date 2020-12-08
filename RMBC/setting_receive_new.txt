@@ -1,0 +1,31 @@
+# web service URL
+
+# production  PRODUCTION
+#service_url=https://ec2-75-101-180-90.compute-1.amazonaws.com:8443/IMSWS/AllService.ws
+
+# development
+#service_url=https://ec2-67-202-36-248.compute-1.amazonaws.com:8443/IMSWS/AllService.ws
+
+# First page after user login
+
+#first_page=home
+first_page=new
+#first_page=update
+#first_page=shipping
+#first_page=rework
+#first_page=find
+
+
+# buttons on the home screen.  Value 1 is disabled, and value 0 is enabled
+#is_receive_new_pallet_button_disabled=1
+#is_update_pallet_button_disabled= 1
+is_shipping_pallet_button_disabled=1
+is_rework_pallet_button_disabled=1
+#is_find_pallet_button_disabled=1
+
+# sound.  Value 1 is sound on, and value 0 is sound off
+#is_play_sound_on_success=0
+#is_play_sound_on_fail=0
+
+# if 1, the number of pallets specified in the BOL must matched the number scanned for each type
+#is_bol_product_type_check_enforced=1
