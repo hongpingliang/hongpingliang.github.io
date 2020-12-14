@@ -740,6 +740,56 @@ var _symbols = [
     ]
   },
   {
+    "id": "OPTAX",
+    "name": "Stock",
+    "category": "Stock",
+    "expense": "",
+    "type": "",
+    "change": 0.0,
+    "upWrong": 0,
+    "downWrong": 0
+  },
+  {
+    "id": "VOHIX",
+    "name": "Stock",
+    "category": "Stock",
+    "expense": "",
+    "type": "",
+    "change": 0.0,
+    "upWrong": 0,
+    "downWrong": 0
+  },
+  {
+    "id": "MUB",
+    "name": "Stock",
+    "category": "Stock",
+    "expense": "",
+    "type": "",
+    "change": 0.0,
+    "upWrong": 0,
+    "downWrong": 0
+  },
+  {
+    "id": "VTEAX",
+    "name": "Stock",
+    "category": "Stock",
+    "expense": "",
+    "type": "",
+    "change": 0.0,
+    "upWrong": 0,
+    "downWrong": 0
+  },
+  {
+    "id": "FTABX",
+    "name": "Stock",
+    "category": "Stock",
+    "expense": "",
+    "type": "",
+    "change": 0.0,
+    "upWrong": 0,
+    "downWrong": 0
+  },
+  {
     "id": "NCLH",
     "name": "Stock",
     "category": "Stock",
