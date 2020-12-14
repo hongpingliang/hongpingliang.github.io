@@ -35,9 +35,7 @@ function init() {
 		var s = _symbols[i];
 		
 		if ( s.transactions == null || s.transactions.length <= 0 ) {
-			if ( s.type != 'ETF' ) {
-				continue;
-			} else if ( s.category != 'Stock - Sector' ) {
+			if ( !(s.type == 'ETF' || s.category == 'Stock') ) {
 				continue;
 			}
 		}
