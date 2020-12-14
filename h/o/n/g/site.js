@@ -36,7 +36,7 @@ function init() {
 		
 		if ( s.transactions == null || s.transactions.length <= 0 ) {
 			if ( !(s.type == 'ETF' || s.category == 'Stock') ) {
-				continue;
+			//	continue;
 			}
 		}
 		
