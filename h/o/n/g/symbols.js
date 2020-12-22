@@ -176,6 +176,26 @@ var _symbols = [
     ]
   },
   {
+    "id": "BND",
+    "name": "Total Bond Market ETF",
+    "category": "Bond - Inter-term Investment",
+    "expense": "0.05%",
+    "type": "ETF",
+    "change": 0.0,
+    "upWrong": 0,
+    "downWrong": 0,
+    "transactions": [
+      {
+        "symbol": "BND",
+        "date": "2020-12-21",
+        "type": "buy",
+        "price": 88.12,
+        "share": 535.0,
+        "note": "V:Liang"
+      }
+    ]
+  },
+  {
     "id": "VMBSX",
     "name": "Mortgage-Backed Securities Index Admiral Shares",
     "category": "Bond - Inter-term Government",
@@ -343,6 +363,34 @@ var _symbols = [
         "type": "buy",
         "price": 11.75,
         "share": 851.0,
+        "note": "V:Liang"
+      }
+    ]
+  },
+  {
+    "id": "VTEAX",
+    "name": "Purchase fee: 0.25%",
+    "category": "Bond - Long-term National Muni",
+    "expense": "0.09%",
+    "type": "",
+    "change": 0.0,
+    "upWrong": 0,
+    "downWrong": 0,
+    "transactions": [
+      {
+        "symbol": "VTEAX",
+        "date": "2020-12-21",
+        "type": "buy",
+        "price": 22.03,
+        "share": 454.0,
+        "note": "V:Liang"
+      },
+      {
+        "symbol": "VTEAX",
+        "date": "2020-12-21",
+        "type": "buy",
+        "price": 22.03,
+        "share": 454.0,
         "note": "V:Liang"
       }
     ]
@@ -552,6 +600,34 @@ var _symbols = [
         "price": 14.54,
         "share": 3439.0,
         "note": "V:Li"
+      }
+    ]
+  },
+  {
+    "id": "VTEAX",
+    "name": "Stock",
+    "category": "Stock",
+    "expense": "",
+    "type": "",
+    "change": 0.0,
+    "upWrong": 0,
+    "downWrong": 0,
+    "transactions": [
+      {
+        "symbol": "VTEAX",
+        "date": "2020-12-21",
+        "type": "buy",
+        "price": 22.03,
+        "share": 454.0,
+        "note": "V:Liang"
+      },
+      {
+        "symbol": "VTEAX",
+        "date": "2020-12-21",
+        "type": "buy",
+        "price": 22.03,
+        "share": 454.0,
+        "note": "V:Liang"
       }
     ]
   },
@@ -768,16 +844,6 @@ var _symbols = [
     "name": "Total International Stock ETF",
     "category": "Stock - International",
     "expense": "0.11%",
-    "type": "ETF",
-    "change": 0.0,
-    "upWrong": 0,
-    "downWrong": 0
-  },
-  {
-    "id": "BND",
-    "name": "Total Bond Market ETF",
-    "category": "Bond - Inter-term Investment",
-    "expense": "0.05%",
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
@@ -1674,16 +1740,6 @@ var _symbols = [
     "downWrong": 0
   },
   {
-    "id": "VTEAX",
-    "name": "Purchase fee: 0.25%",
-    "category": "Bond - Long-term National Muni",
-    "expense": "0.09%",
-    "type": "",
-    "change": 0.0,
-    "upWrong": 0,
-    "downWrong": 0
-  },
-  {
     "id": "BIV",
     "name": "Intermediate-Term Bond ETF",
     "category": "Bond - Inter-term Investment",
@@ -2525,16 +2581,6 @@ var _symbols = [
   },
   {
     "id": "MUB",
-    "name": "Stock",
-    "category": "Stock",
-    "expense": "",
-    "type": "",
-    "change": 0.0,
-    "upWrong": 0,
-    "downWrong": 0
-  },
-  {
-    "id": "VTEAX",
     "name": "Stock",
     "category": "Stock",
     "expense": "",
