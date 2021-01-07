@@ -192,6 +192,14 @@ var _symbols = [
         "price": 88.12,
         "share": 535.0,
         "note": "V:Liang"
+      },
+      {
+        "symbol": "BND",
+        "date": "2021-01-07",
+        "type": "buy",
+        "price": 87.39,
+        "share": 600.0,
+        "note": "V:Liang"
       }
     ]
   },
@@ -205,14 +213,6 @@ var _symbols = [
     "upWrong": 0,
     "downWrong": 0,
     "transactions": [
-      {
-        "symbol": "VMBSX",
-        "date": "",
-        "type": "watch",
-        "price": 0.0,
-        "share": 0.0,
-        "note": ""
-      },
       {
         "symbol": "VMBSX",
         "date": "2020-02-20",
@@ -304,26 +304,6 @@ var _symbols = [
     ]
   },
   {
-    "id": "VSCSX",
-    "name": "Short-Term Corporate Bond Index Admiral Shares",
-    "category": "Bond - Short-term Investment",
-    "expense": "0.07%",
-    "type": "",
-    "change": 0.0,
-    "upWrong": 0,
-    "downWrong": 0,
-    "transactions": [
-      {
-        "symbol": "VSCSX",
-        "date": "",
-        "type": "watch",
-        "price": 0.0,
-        "share": 0.0,
-        "note": ""
-      }
-    ]
-  },
-  {
     "id": "VWAHX",
     "name": "High-Yield Tax-Exempt",
     "category": "Bond - Long-term National Muni",
@@ -364,6 +344,26 @@ var _symbols = [
         "price": 11.75,
         "share": 851.0,
         "note": "V:Liang"
+      }
+    ]
+  },
+  {
+    "id": "VWLTX",
+    "name": "Long-Term Tax-Exempt",
+    "category": "Bond - Long-term National Muni",
+    "expense": "0.19%",
+    "type": "",
+    "change": 0.0,
+    "upWrong": 0,
+    "downWrong": 0,
+    "transactions": [
+      {
+        "symbol": "VWLTX",
+        "date": "2021-01-04",
+        "type": "buy",
+        "price": 12.23,
+        "share": 4251.0,
+        "note": "M:Liang"
       }
     ]
   },
@@ -428,6 +428,26 @@ var _symbols = [
         "price": 118.56,
         "share": 88.0,
         "note": "V:Li"
+      }
+    ]
+  },
+  {
+    "id": "BLV",
+    "name": "Long-Term Bond ETF",
+    "category": "Bond - Long-term Investment",
+    "expense": "0.07%",
+    "type": "ETF",
+    "change": 0.0,
+    "upWrong": 0,
+    "downWrong": 0,
+    "transactions": [
+      {
+        "symbol": "BLV",
+        "date": "2021-01-07",
+        "type": "buy",
+        "price": 106.44,
+        "share": 500.0,
+        "note": "V:Liang"
       }
     ]
   },
@@ -552,6 +572,14 @@ var _symbols = [
         "price": 71.92,
         "share": 700.0,
         "note": "V:Liang"
+      },
+      {
+        "symbol": "VDE",
+        "date": "2021-01-07",
+        "type": "sell",
+        "price": 56.9,
+        "share": 738.0,
+        "note": "V:Liang"
       }
     ]
   },
@@ -632,7 +660,7 @@ var _symbols = [
     ]
   },
   {
-    "id": "AAL",
+    "id": "VWLTX",
     "name": "Stock",
     "category": "Stock",
     "expense": "",
@@ -642,200 +670,12 @@ var _symbols = [
     "downWrong": 0,
     "transactions": [
       {
-        "symbol": "AAL",
-        "date": "2020-12-01",
+        "symbol": "VWLTX",
+        "date": "2021-01-04",
         "type": "buy",
-        "price": 14.48,
-        "share": 28.0,
-        "note": "F:Li"
-      }
-    ]
-  },
-  {
-    "id": "CCL",
-    "name": "Stock",
-    "category": "Stock",
-    "expense": "",
-    "type": "",
-    "change": 0.0,
-    "upWrong": 0,
-    "downWrong": 0,
-    "transactions": [
-      {
-        "symbol": "CCL",
-        "date": "2020-12-01",
-        "type": "buy",
-        "price": 20.57,
-        "share": 20.0,
-        "note": "F:Li"
-      }
-    ]
-  },
-  {
-    "id": "XOM",
-    "name": "Stock",
-    "category": "Stock",
-    "expense": "",
-    "type": "",
-    "change": 0.0,
-    "upWrong": 0,
-    "downWrong": 0,
-    "transactions": [
-      {
-        "symbol": "XOM",
-        "date": "2020-12-01",
-        "type": "buy",
-        "price": 39.52,
-        "share": 20.0,
-        "note": "F:Li"
-      }
-    ]
-  },
-  {
-    "id": "INO",
-    "name": "Stock",
-    "category": "Stock",
-    "expense": "",
-    "type": "",
-    "change": 0.0,
-    "upWrong": 0,
-    "downWrong": 0,
-    "transactions": [
-      {
-        "symbol": "INO",
-        "date": "2020-12-01",
-        "type": "buy",
-        "price": 12.86,
-        "share": 10.0,
-        "note": "F:Li"
-      }
-    ]
-  },
-  {
-    "id": "MRNA",
-    "name": "Stock",
-    "category": "Stock",
-    "expense": "",
-    "type": "",
-    "change": 0.0,
-    "upWrong": 0,
-    "downWrong": 0,
-    "transactions": [
-      {
-        "symbol": "MRNA",
-        "date": "2020-12-01",
-        "type": "buy",
-        "price": 158.27,
-        "share": 5.0,
-        "note": "F:Li"
-      }
-    ]
-  },
-  {
-    "id": "PFE",
-    "name": "Stock",
-    "category": "Stock",
-    "expense": "",
-    "type": "",
-    "change": 0.0,
-    "upWrong": 0,
-    "downWrong": 0,
-    "transactions": [
-      {
-        "symbol": "PFE",
-        "date": "2020-12-01",
-        "type": "buy",
-        "price": 39.9,
-        "share": 10.0,
-        "note": "F:Li"
-      }
-    ]
-  },
-  {
-    "id": "TLRY",
-    "name": "Stock",
-    "category": "Stock",
-    "expense": "",
-    "type": "",
-    "change": 0.0,
-    "upWrong": 0,
-    "downWrong": 0,
-    "transactions": [
-      {
-        "symbol": "TLRY",
-        "date": "2020-12-01",
-        "type": "buy",
-        "price": 8.88,
-        "share": 40.0,
-        "note": "F:Li"
-      }
-    ]
-  },
-  {
-    "id": "RIG",
-    "name": "Stock",
-    "category": "Stock",
-    "expense": "",
-    "type": "",
-    "change": 0.0,
-    "upWrong": 0,
-    "downWrong": 0,
-    "transactions": [
-      {
-        "symbol": "RIG",
-        "date": "2020-11-25",
-        "type": "buy",
-        "price": 2.13,
-        "share": 700.0,
-        "note": "F:Li"
-      }
-    ]
-  },
-  {
-    "id": "FSR",
-    "name": "Stock",
-    "category": "Stock",
-    "expense": "",
-    "type": "",
-    "change": 0.0,
-    "upWrong": 0,
-    "downWrong": 0,
-    "transactions": [
-      {
-        "symbol": "FSR",
-        "date": "2020-11-25",
-        "type": "buy",
-        "price": 20.13,
-        "share": 20.0,
-        "note": "F:Li"
-      }
-    ]
-  },
-  {
-    "id": "PBI",
-    "name": "Stock",
-    "category": "Stock",
-    "expense": "",
-    "type": "",
-    "change": 0.0,
-    "upWrong": 0,
-    "downWrong": 0,
-    "transactions": [
-      {
-        "symbol": "PBI",
-        "date": "2019-05-13",
-        "type": "buy",
-        "price": 4.9,
-        "share": 2000.0,
-        "note": "V:Li"
-      },
-      {
-        "symbol": "PBI",
-        "date": "2019-10-16",
-        "type": "sell",
-        "price": 4.61,
-        "share": 2046.0,
-        "note": "V:Li"
+        "price": 12.23,
+        "share": 4251.0,
+        "note": "M:Liang"
       }
     ]
   },
@@ -1600,6 +1440,16 @@ var _symbols = [
     "downWrong": 0
   },
   {
+    "id": "VSCSX",
+    "name": "Short-Term Corporate Bond Index Admiral Shares",
+    "category": "Bond - Short-term Investment",
+    "expense": "0.07%",
+    "type": "",
+    "change": 0.0,
+    "upWrong": 0,
+    "downWrong": 0
+  },
+  {
     "id": "VFSTX",
     "name": "Short-Term Investment-Grade",
     "category": "Bond - Short-term Investment",
@@ -1663,16 +1513,6 @@ var _symbols = [
     "id": "VMLTX",
     "name": "Limited-Term Tax-Exempt",
     "category": "Bond - Short-term National Muni",
-    "expense": "0.19%",
-    "type": "",
-    "change": 0.0,
-    "upWrong": 0,
-    "downWrong": 0
-  },
-  {
-    "id": "VWLTX",
-    "name": "Long-Term Tax-Exempt",
-    "category": "Bond - Long-term National Muni",
     "expense": "0.19%",
     "type": "",
     "change": 0.0,
@@ -1753,16 +1593,6 @@ var _symbols = [
     "id": "VGIT",
     "name": "Intermediate-Term Treasury ETF",
     "category": "Bond - Inter-term Government",
-    "expense": "0.07%",
-    "type": "ETF",
-    "change": 0.0,
-    "upWrong": 0,
-    "downWrong": 0
-  },
-  {
-    "id": "BLV",
-    "name": "Long-Term Bond ETF",
-    "category": "Bond - Long-term Investment",
     "expense": "0.07%",
     "type": "ETF",
     "change": 0.0,
@@ -2591,16 +2421,6 @@ var _symbols = [
   },
   {
     "id": "FTABX",
-    "name": "Stock",
-    "category": "Stock",
-    "expense": "",
-    "type": "",
-    "change": 0.0,
-    "upWrong": 0,
-    "downWrong": 0
-  },
-  {
-    "id": "NCLH",
     "name": "Stock",
     "category": "Stock",
     "expense": "",
