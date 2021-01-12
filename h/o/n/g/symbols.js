@@ -456,6 +456,14 @@ var _symbols = [
         "price": 105.83,
         "share": 200.0,
         "note": "V:Liang"
+      },
+      {
+        "symbol": "BLV",
+        "date": "2021-01-12",
+        "type": "buy",
+        "price": 105.38,
+        "share": 200.0,
+        "note": "V:Liang"
       }
     ]
   },
