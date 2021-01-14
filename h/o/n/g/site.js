@@ -40,7 +40,7 @@ function init() {
 			}
 		}
 		
-		t += '<a style="font-size:120%;" href="http://www.google.com/search?q=stock,' + s.id
+		t += '<a target="_new" style="font-size:120%;" href="http://www.google.com/search?q=stock,' + s.id
 		+ '">' + s.id + '</a>';
 		t += ' &nbsp; &nbsp;  &nbsp;';
 		
