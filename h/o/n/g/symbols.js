@@ -19,7 +19,7 @@ var _symbols = [
       },
       {
         "symbol": "VTI",
-        "date": "2019-05-9",
+        "date": "2019-05-09",
         "type": "buy",
         "price": 145.66,
         "share": 68.0,
@@ -83,7 +83,7 @@ var _symbols = [
         "type": "sell",
         "price": 118.56,
         "share": 88.0,
-        "note": "V:Li"
+        "note": "V:Li\t\t"
       },
       {
         "symbol": "EDV",
@@ -216,6 +216,14 @@ var _symbols = [
         "price": 87.39,
         "share": 600.0,
         "note": "V:Liang"
+      },
+      {
+        "symbol": "BND",
+        "date": "2021-01-15",
+        "type": "buy",
+        "price": 87.33,
+        "share": 250.0,
+        "note": "V:Li"
       }
     ]
   },
@@ -339,19 +347,19 @@ var _symbols = [
       },
       {
         "symbol": "VBTLX",
-        "date": "2019-03-05",
-        "type": "buy",
-        "price": 10.5,
-        "share": 950.0,
-        "note": "V:Liang"
-      },
-      {
-        "symbol": "VBTLX",
         "date": "2019-02-26",
         "type": "buy",
         "price": 10.52,
         "share": 950.0,
         "note": "V:Li"
+      },
+      {
+        "symbol": "VBTLX",
+        "date": "2019-03-05",
+        "type": "buy",
+        "price": 10.5,
+        "share": 950.0,
+        "note": "V:Liang"
       },
       {
         "symbol": "VBTLX",
@@ -403,7 +411,7 @@ var _symbols = [
         "type": "buy",
         "price": 21.61,
         "share": 463.0,
-        "note": "V:Liang"
+        "note": "V:Liang\t\t"
       },
       {
         "symbol": "VMBSX",
@@ -411,7 +419,7 @@ var _symbols = [
         "type": "buy",
         "price": 21.61,
         "share": 458.0,
-        "note": "V:Li"
+        "note": "V:Li\t\t"
       }
     ]
   },
@@ -455,6 +463,14 @@ var _symbols = [
         "type": "buy",
         "price": 10.39,
         "share": 9652.0,
+        "note": "V:Li"
+      },
+      {
+        "symbol": "VBIRX",
+        "date": "2021-01-14",
+        "type": "sell",
+        "price": 10.85,
+        "share": 14974.0,
         "note": "V:Li"
       }
     ]
@@ -607,7 +623,7 @@ var _symbols = [
       },
       {
         "symbol": "VTSAX",
-        "date": "2019-05-9",
+        "date": "2019-05-09",
         "type": "buy",
         "price": 71.51,
         "share": 140.0,
@@ -663,7 +679,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VGIT",
@@ -673,7 +690,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VMBS",
@@ -683,7 +701,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "BSV",
@@ -693,7 +712,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VTIP",
@@ -703,7 +723,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VGSH",
@@ -713,7 +734,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VCIT",
@@ -723,7 +745,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VCLT",
@@ -733,7 +756,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VCSH",
@@ -743,7 +767,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VTC",
@@ -753,7 +778,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "BNDW",
@@ -763,7 +789,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "BNDX",
@@ -773,7 +800,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VWOB",
@@ -783,7 +811,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VXUS",
@@ -793,7 +822,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VIG",
@@ -803,7 +833,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "ESGV",
@@ -813,7 +844,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VUG",
@@ -823,7 +855,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VYM",
@@ -833,7 +866,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VV",
@@ -843,7 +877,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "MGC",
@@ -853,7 +888,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "MGK",
@@ -863,7 +899,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "MGV",
@@ -873,7 +910,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VOO",
@@ -883,7 +921,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VTV",
@@ -893,7 +932,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VXF",
@@ -903,7 +943,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VO",
@@ -913,7 +954,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VOT",
@@ -923,7 +965,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VOE",
@@ -933,7 +976,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VB",
@@ -943,7 +987,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VBK",
@@ -953,7 +998,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VBR",
@@ -963,7 +1009,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VT",
@@ -973,7 +1020,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VSGX",
@@ -983,7 +1031,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VEU",
@@ -993,7 +1042,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VSS",
@@ -1003,7 +1053,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VEA",
@@ -1013,7 +1064,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VGK",
@@ -1023,7 +1075,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VPL",
@@ -1033,7 +1086,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VNQI",
@@ -1043,7 +1097,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VIGI",
@@ -1053,7 +1108,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VYMI",
@@ -1063,7 +1119,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VWO",
@@ -1073,7 +1130,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VOX",
@@ -1083,7 +1141,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VCR",
@@ -1093,7 +1152,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VDC",
@@ -1103,7 +1163,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VFH",
@@ -1113,7 +1174,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VIS",
@@ -1123,7 +1185,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VGT",
@@ -1133,7 +1196,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VAW",
@@ -1143,7 +1207,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VNQ",
@@ -1153,7 +1218,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VPU",
@@ -1163,7 +1229,8 @@ var _symbols = [
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VFIIX",
@@ -1173,7 +1240,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VIPSX",
@@ -1183,7 +1251,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VBILX",
@@ -1193,7 +1262,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VFITX",
@@ -1203,7 +1273,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VSIGX",
@@ -1213,7 +1284,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VBLAX",
@@ -1223,7 +1295,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VUSTX",
@@ -1233,7 +1306,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VLGSX",
@@ -1243,7 +1317,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VSGBX",
@@ -1253,7 +1328,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VTAPX",
@@ -1263,7 +1339,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VSBSX",
@@ -1273,7 +1350,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VCORX",
@@ -1283,7 +1361,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VICSX",
@@ -1293,7 +1372,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VFICX",
@@ -1303,7 +1383,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VLTCX",
@@ -1313,7 +1394,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VWESX",
@@ -1323,7 +1405,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VSCSX",
@@ -1333,7 +1416,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VFSTX",
@@ -1343,7 +1427,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VUBFX",
@@ -1353,7 +1438,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VWEHX",
@@ -1363,7 +1449,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VCAIX",
@@ -1373,7 +1460,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VCITX",
@@ -1383,7 +1471,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VWITX",
@@ -1393,7 +1482,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VMLTX",
@@ -1403,7 +1493,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VMATX",
@@ -1413,7 +1504,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VNJTX",
@@ -1423,7 +1515,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VNYTX",
@@ -1433,7 +1526,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VOHIX",
@@ -1443,7 +1537,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VPAIX",
@@ -1453,7 +1548,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VWSTX",
@@ -1463,7 +1559,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VFIAX",
@@ -1473,7 +1570,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VDEQX",
@@ -1483,7 +1581,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VDADX",
@@ -1493,7 +1592,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VDIGX",
@@ -1503,7 +1603,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VEIPX",
@@ -1513,7 +1614,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VFTAX",
@@ -1523,7 +1625,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VQNPX",
@@ -1533,7 +1636,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VIGAX",
@@ -1543,7 +1647,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VHYAX",
@@ -1553,7 +1658,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VLCAX",
@@ -1563,7 +1669,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VMRAX",
@@ -1573,7 +1680,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VPMAX",
@@ -1583,7 +1691,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VPCCX",
@@ -1593,7 +1702,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VTCLX",
@@ -1603,7 +1713,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VWUSX",
@@ -1613,7 +1724,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VUVLX",
@@ -1623,7 +1735,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VVIAX",
@@ -1633,7 +1746,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VWNDX",
@@ -1643,7 +1757,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VWNFX",
@@ -1653,7 +1768,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VHCAX",
@@ -1663,7 +1779,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VCVLX",
@@ -1673,7 +1790,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VEXAX",
@@ -1683,7 +1801,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VMGRX",
@@ -1693,7 +1812,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VMGMX",
@@ -1703,7 +1823,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VIMAX",
@@ -1713,7 +1834,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VMVAX",
@@ -1723,7 +1845,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VASVX",
@@ -1733,7 +1856,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VSEQX",
@@ -1743,7 +1867,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VEXPX",
@@ -1753,7 +1878,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VEVFX",
@@ -1763,7 +1889,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VSGAX",
@@ -1773,7 +1900,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VSMAX",
@@ -1783,7 +1911,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VSIAX",
@@ -1793,7 +1922,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VSTCX",
@@ -1803,7 +1933,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VTMSX",
@@ -1813,7 +1944,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VGCIX",
@@ -1823,7 +1955,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VTABX",
@@ -1833,7 +1966,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VEMBX",
@@ -1843,7 +1977,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VGAVX",
@@ -1853,7 +1988,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VGPMX",
@@ -1863,7 +1999,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VHGEX",
@@ -1873,7 +2010,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VTWAX",
@@ -1883,7 +2021,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VTMGX",
@@ -1893,7 +2032,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VEUSX",
@@ -1903,7 +2043,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VFWAX",
@@ -1913,7 +2054,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VFSAX",
@@ -1923,7 +2065,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VGRLX",
@@ -1933,7 +2076,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VIAAX",
@@ -1943,7 +2087,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VINEX",
@@ -1953,7 +2098,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VWIGX",
@@ -1963,7 +2109,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VIHAX",
@@ -1973,7 +2120,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VTRIX",
@@ -1983,7 +2131,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VPADX",
@@ -1993,7 +2142,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VMMSX",
@@ -2003,7 +2153,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VEMAX",
@@ -2013,7 +2164,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VMVFX",
@@ -2023,7 +2175,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VGENX",
@@ -2033,7 +2186,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VGHCX",
@@ -2043,7 +2197,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VGSLX",
@@ -2053,7 +2208,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VTWNX",
@@ -2063,7 +2219,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VTTVX",
@@ -2073,7 +2230,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VTHRX",
@@ -2083,7 +2241,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VTTHX",
@@ -2093,7 +2252,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VFORX",
@@ -2103,7 +2263,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VTIVX",
@@ -2113,7 +2274,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VFIFX",
@@ -2123,7 +2285,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VFFVX",
@@ -2133,7 +2296,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VTTSX",
@@ -2143,7 +2307,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VLXVX",
@@ -2153,7 +2318,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VTINX",
@@ -2163,7 +2329,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VSCGX",
@@ -2173,7 +2340,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VASGX",
@@ -2183,7 +2351,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VASIX",
@@ -2193,7 +2362,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VSMGX",
@@ -2203,7 +2373,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VBIAX",
@@ -2213,7 +2384,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VCVSX",
@@ -2223,7 +2395,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VGSTX",
@@ -2233,7 +2406,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VTMFX",
@@ -2243,7 +2417,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VWINX",
@@ -2253,7 +2428,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VWELX",
@@ -2263,7 +2439,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VPGDX",
@@ -2273,7 +2450,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VGWIX",
@@ -2283,7 +2461,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "VGWLX",
@@ -2293,7 +2472,8 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   },
   {
     "id": "OPTAX",
@@ -2303,6 +2483,7 @@ var _symbols = [
     "type": "",
     "change": 0.0,
     "upWrong": 0,
-    "downWrong": 0
+    "downWrong": 0,
+    "transactions": []
   }
 ]
