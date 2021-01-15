@@ -1,5 +1,57 @@
 var _symbols = [
   {
+    "id": "VTI",
+    "name": "Total Stock Market ETF",
+    "category": "Stock - Large-Cap Blend",
+    "expense": "0.04%",
+    "type": "ETF",
+    "change": 0.0,
+    "upWrong": 0,
+    "downWrong": 0,
+    "transactions": [
+      {
+        "symbol": "VTI",
+        "date": "2019-03-04",
+        "type": "buy",
+        "price": 142.5,
+        "share": 70.0,
+        "note": "V:Li"
+      },
+      {
+        "symbol": "VTI",
+        "date": "2019-05-9",
+        "type": "buy",
+        "price": 145.66,
+        "share": 68.0,
+        "note": "V:Liang"
+      },
+      {
+        "symbol": "VTI",
+        "date": "2019-06-20",
+        "type": "sell",
+        "price": 150.07,
+        "share": 70.0,
+        "note": "V:Li"
+      },
+      {
+        "symbol": "VTI",
+        "date": "2019-10-03",
+        "type": "buy",
+        "price": 146.61,
+        "share": 150.0,
+        "note": "V:Li"
+      },
+      {
+        "symbol": "VTI",
+        "date": "2019-10-16",
+        "type": "sell",
+        "price": 152.18,
+        "share": 150.0,
+        "note": "V:Li"
+      }
+    ]
+  },
+  {
     "id": "EDV",
     "name": "Extended Duration Treasury ETF",
     "category": "Bond - Long-term Government",
@@ -76,34 +128,6 @@ var _symbols = [
         "price": 105.38,
         "share": 200.0,
         "note": "V:Liang"
-      }
-    ]
-  },
-  {
-    "id": "VGLT",
-    "name": "Long-Term Treasury ETF",
-    "category": "Bond - Long-term Government",
-    "expense": "0.07%",
-    "type": "ETF",
-    "change": 0.0,
-    "upWrong": 0,
-    "downWrong": 0,
-    "transactions": [
-      {
-        "symbol": "VGLT",
-        "date": "2019-02-21",
-        "type": "buy",
-        "price": 74.35,
-        "share": 134.0,
-        "note": "V:Li"
-      },
-      {
-        "symbol": "VGLT",
-        "date": "2019-10-03",
-        "type": "sell",
-        "price": 88.52,
-        "share": 136.0,
-        "note": "V:Li"
       }
     ]
   },
@@ -196,53 +220,29 @@ var _symbols = [
     ]
   },
   {
-    "id": "VTI",
-    "name": "Total Stock Market ETF",
-    "category": "Stock - Large-Cap Blend",
-    "expense": "0.04%",
+    "id": "VGLT",
+    "name": "Long-Term Treasury ETF",
+    "category": "Bond - Long-term Government",
+    "expense": "0.07%",
     "type": "ETF",
     "change": 0.0,
     "upWrong": 0,
     "downWrong": 0,
     "transactions": [
       {
-        "symbol": "VTI",
-        "date": "2019-03-04",
+        "symbol": "VGLT",
+        "date": "2019-02-21",
         "type": "buy",
-        "price": 142.5,
-        "share": 70.0,
+        "price": 74.35,
+        "share": 134.0,
         "note": "V:Li"
       },
       {
-        "symbol": "VTI",
-        "date": "2019-05-9",
-        "type": "buy",
-        "price": 145.66,
-        "share": 68.0,
-        "note": "V:Liang"
-      },
-      {
-        "symbol": "VTI",
-        "date": "2019-06-20",
-        "type": "sell",
-        "price": 150.07,
-        "share": 70.0,
-        "note": "V:Li"
-      },
-      {
-        "symbol": "VTI",
+        "symbol": "VGLT",
         "date": "2019-10-03",
-        "type": "buy",
-        "price": 146.61,
-        "share": 150.0,
-        "note": "V:Li"
-      },
-      {
-        "symbol": "VTI",
-        "date": "2019-10-16",
         "type": "sell",
-        "price": 152.18,
-        "share": 150.0,
+        "price": 88.52,
+        "share": 136.0,
         "note": "V:Li"
       }
     ]
