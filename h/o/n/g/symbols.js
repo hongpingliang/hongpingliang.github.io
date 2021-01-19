@@ -92,6 +92,14 @@ var _symbols = [
         "price": 145.41,
         "share": 194.0,
         "note": "V:Liang"
+      },
+      {
+        "symbol": "EDV",
+        "date": "2021-01-19",
+        "type": "buy",
+        "price": 144.91,
+        "share": 150.0,
+        "note": "V:Li"
       }
     ]
   },
@@ -222,6 +230,14 @@ var _symbols = [
         "date": "2021-01-15",
         "type": "buy",
         "price": 87.33,
+        "share": 250.0,
+        "note": "V:Li"
+      },
+      {
+        "symbol": "BND",
+        "date": "2021-01-19",
+        "type": "buy",
+        "price": 87.321,
         "share": 250.0,
         "note": "V:Li"
       }
