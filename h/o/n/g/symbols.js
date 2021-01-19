@@ -237,7 +237,7 @@ var _symbols = [
         "symbol": "BND",
         "date": "2021-01-19",
         "type": "buy",
-        "price": 87.321,
+        "price": 87.31,
         "share": 250.0,
         "note": "V:Li"
       }
