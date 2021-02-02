@@ -23,12 +23,14 @@ function drawChart() {
 			[ new Date(2008, 1, 6), 33322, 39463 ] ]);
 
 	var chart = new google.visualization.AnnotatedTimeLine(document
-			.getElementById('chart_div'));
+			.getElementById('history_div'));
 	chart.draw(data, {
 		displayAnnotations : true
 	});
 }
 function init() {
+	 drawChart();
+	
 	var t = '';
 	t += '<div style="padding-left:5px;">'
 	for (var i = 0; i < _symbols.length; i++) {
