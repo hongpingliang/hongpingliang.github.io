@@ -29,7 +29,6 @@ function drawChart() {
 	});
 }
 function init() {
-	 drawChart();
 	
 	var t = '';
 	t += '<div style="padding-left:5px;">'
