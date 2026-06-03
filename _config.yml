@@ -24,13 +24,12 @@ repository               : "hongpingliang/hongpingliang.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "a runner"
+  name             : "A Family Man, Runner, Dog Walker"
   pronouns         : # example: "she/her"  
-  bio              : "a random collections"
+  bio              : "Ph.D with two Masters"
   location         : "New Haven, CT"
   employer         : "Virginia Tech"
   uri              : # URL
-  email            : "none@example.org" 
 
   # Academic websites
   academia         : # URL
@@ -54,10 +53,11 @@ author:
   github           : "hongpingliang"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
+  email            : "none@example.org" 
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : #
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username

@@ -13,9 +13,6 @@ main:
 
   # - title: "Talks"
   #   url: /talks/    
-
-  - title: "Teaching"
-    url: /teaching/    
     
   # - title: "Portfolio"
   #   url: /portfolio/
@@ -24,8 +21,12 @@ main:
     url: /year-archive/
     
   - title: "Fractal"
-    url: /_fractal/
-    
+    url: /fractal/
+
+  - title: "Teaching"
+    url: /teaching/    
+
+
   # - title: "CV"
   #   url: /cv-json/
     
