@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "air" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Hongping Liang | a runner"
+title                    : "Hongping Liang"
 title_separator          : "-"
 name                     : &name "Hongping Liang"
 description              : &description "Personal Website"   # Update this with a general description of your site, this is the default if not overridden by a page
@@ -24,7 +24,7 @@ repository               : "hongpingliang/hongpingliang.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Welcome"
+  name             : "a runner"
   pronouns         : # example: "she/her"  
   bio              : "a random collections"
   location         : "New Haven, CT"
