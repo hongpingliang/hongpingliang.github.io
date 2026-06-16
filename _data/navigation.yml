@@ -16,13 +16,13 @@ main:
     
   # - title: "Portfolio"
   #   url: /portfolio/
-        
-  - title: "Blog Posts"
-    url: /year-archive/
-    
+
   - title: "Fractal"
     url: /fractal/
 
+  - title: "Blog Posts"
+    url: /year-archive/
+    
   # - title: "Teaching"
   #   url: /fractal2/    
 
