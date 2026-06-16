@@ -233,10 +233,10 @@ class Fractal {
 		var t = '';
 		for (var i=0; i<_ifs_list.length; i++) {
 			var ifs = _ifs_list[i];
-			t += '<button onclick="Index.setIFSData(' + i + ');" type="button" class="btn btn-info">';
+			t += '<button onclick="Index.setIFSData(' + i + ');" type="button" class="btn btn-info  btn-sm">';
 			t += ifs.name + '</button>';
-			if (i % 8 == 7)
-				t += '<br/>'
+			// if (i % 8 == 7)
+			// 	t += '<br/>'
 		}
 		
 //		$('#ifs_list').html(t);
@@ -1437,7 +1437,7 @@ var _ifs_list = [
 							0.45 ] ]
 		},
 		{
-			"name" : "Fifity",
+			"name" : "Fifty",
 			"maps" : [
 					[ 0.030804, 0.274001, 0.125599, 0.396807, 0.02265, 0.181,
 							0.01 ],

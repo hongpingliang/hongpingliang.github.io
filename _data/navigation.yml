@@ -23,12 +23,12 @@ main:
   - title: "Fractal"
     url: /fractal/
 
-  - title: "Teaching"
-    url: /fractal2/    
+  # - title: "Teaching"
+  #   url: /fractal2/    
 
 
   # - title: "CV"
   #   url: /cv-json/
     
-  - title: "Guide"
-    url: /markdown/
+  # - title: "Guide"
+  #   url: /markdown/
