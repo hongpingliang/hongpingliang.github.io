@@ -1,0 +1,57 @@
+---
+layout: archive
+title: "Video Collection"
+permalink: /video/
+author_profile: true
+---
+
+{% include base_path %}
+
+<div class="youtube-card">
+    <h2 class="youtube-title">Featured Video</h2>
+
+    <div class="youtube-container">
+        <iframe
+            src="https://www.youtube.com/embed/CNfYRHv5RE4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+    </div>
+</div>
+
+<style>
+.youtube-card {
+    max-width: 420px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.youtube-title {
+    margin: 0 0 16px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #222;
+    text-align: center;
+}
+
+.youtube-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #000;
+}
+
+.youtube-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+</style>
