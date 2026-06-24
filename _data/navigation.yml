@@ -20,11 +20,15 @@ main:
   - title: "Fractal"
     url: /fractal/
 
-  - title: "Blog Posts"
-    url: /blog-posts/
+  - title: "Running"
+    url: /running/
+
+  - title: "Stories"
+    url: /stories/
 
   - title: "Video"
     url: /video/
+
 
 
   # - title: "Teaching"

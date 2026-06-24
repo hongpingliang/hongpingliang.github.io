@@ -24,11 +24,11 @@ repository               : "hongpingliang/hongpingliang.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "A Family Man, Runner, Dog Walker"
+  name             : "A Guy, Runner, Dog Walker"
   pronouns         : # example: "she/her"  
   bio              : "Ph.D in Biology, MS in CS"
-  location         : "New Haven, CT"
-  employer         : "Virginia Tech"
+  #location         : "New Haven, CT"
+  #employer         : "Virginia Tech"
   uri              : # URL
 
   # Academic websites
@@ -50,10 +50,10 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "hongpingliang"
+  github           : #"hongpingliang"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
-  email            : "none@example.org" 
+  email            : #"none@example.org" 
 
   # Social media
   artstation       : # Username
