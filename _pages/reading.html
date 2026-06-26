@@ -81,58 +81,51 @@ author_profile: true
 
 <script>
 async function loadBookList() {
-    try {
-        const response = await fetch("{{ base_path }}/files/read_list.csv");
-        const csv = await response.text();
+    const response = await fetch("{{ base_path }}/files/read_list.csv");
+    const csv = await response.text();
 
-        let books = Papa.parse(csv, {
-            header: true,
-            skipEmptyLines: true
-        }).data;
+    let books = Papa.parse(csv, {
+        header: true,
+        skipEmptyLines: true
+    }).data;
 
-        books = books
-            .filter(b => b.activity && b.activity.trim() === "Borrowed")
-            .filter(b => b.isbn);
+    books = books
+        .filter(b => b.activity && b.activity.trim() === "Borrowed")
+        .filter(b => b.isbn);
 
-        // remove duplicate ISBN
-        books = [...new Map(
-            books.map(b => [b.isbn, b])
-        ).values()];
+    // remove duplicate ISBN
+    books = [...new Map(
+        books.map(b => [b.isbn, b])
+    ).values()];
 
-        // newest first
-        books.sort((a, b) =>
-            new Date(b.timestamp) - new Date(a.timestamp)
-        );
+    // newest first
+    books.sort((a, b) =>
+        new Date(b.timestamp) - new Date(a.timestamp)
+    );
 
-        const html = books.map((b, i) => `
-            <div class="book-card">
+    const html = books.map((b, i) => `
+        <div class="book-card">
 
-                <img class="cover"
-                     src="${b.cover}"
-                     alt="${b.title || 'book cover'}"
-                     loading="lazy">
+            <img class="cover"
+                    src="${b.cover}"
+                    alt="${b.title || 'book cover'}"
+                    loading="lazy">
 
-                <div class="info">
-                    <div class="title">${b.title || ''}</div>
-                    <div><b>Author:</b> ${b.author || ''}</div>
-                    <div><b>Publisher:</b> ${b.publisher || ''}</div>
-                    <div><b>ISBN:</b> ${b.isbn || ''}</div>
-                    <div><b>Read:</b> ${b.timestamp || ''}</div>
-                </div>
-
-                <div class="number">${books.length - i}</div>
-
+            <div class="info">
+                <div class="title">${b.title || ''}</div>
+                <div><b>Author:</b> ${b.author || ''}</div>
+                <div><b>Publisher:</b> ${b.publisher || ''}</div>
+                <div><b>ISBN:</b> ${b.isbn || ''}</div>
+                <div><b>Read:</b> ${b.timestamp || ''}</div>
             </div>
-        `).join("");
 
-        document.getElementById("book-list").innerHTML = html;
+            <div class="number">${books.length - i}</div>
 
-    } catch(e) {
-        document.getElementById("book-list").innerHTML =
-            "<p>Error loading book list: " + e + "</p>";
-        console.error(e);
-    }
+        </div>
+    `).join("");
+    document.getElementById("book-list").innerHTML = html;
 }
 
 loadBookList();
+
 </script>
