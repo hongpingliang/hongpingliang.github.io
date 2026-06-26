@@ -29,8 +29,8 @@ main:
   - title: "Video"
     url: /video/
 
-  - title: "Book"
-    url: /book/
+  - title: "Reading"
+    url: /reading/
 
 
   # - title: "Teaching"
