@@ -34,15 +34,18 @@ async function loadBookList() {
 
     // display books
     const html = books.map((b, i) => `
-      <div class="book-card">
+        <div class="book-card">
             <img class="cover" src="${b.cover}" alt="${b.title}">
+
             <div class="info">
-                <div class="number">${i + 1}</div>
                 <div class="title">${b.title}</div>
                 <div><b>Author:</b> ${b.author}</div>
                 <div><b>Publisher:</b> ${b.publisher}</div>
+                <div><b>ISBN:</b> ${b.isbn}</div>
                 <div><b>Read:</b> ${b.timestamp}</div>
             </div>
+
+            <div class="number">${books.length - i}</div>
         </div>
     `).join("");
 
@@ -56,16 +59,6 @@ loadBookList();
 #book-list {
     max-width: 900px;
     margin: auto;
-}
-
-.book-card {
-    display: flex;
-    gap: 25px;
-    padding: 20px;
-    margin: 15px 0;
-    border-radius: 12px;
-    background: #fafafa;
-    box-shadow: 0 3px 10px rgba(0,0,0,.15);
 }
 
 .cover {
@@ -87,10 +80,25 @@ loadBookList();
     line-height: 1.8;
 }
 
+.book-card {
+    position: relative;
+    display: flex;
+    gap: 25px;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 12px;
+    background: #fafafa;
+    box-shadow: 0 3px 10px rgba(0,0,0,.15);
+}
+
 .number {
-    font-size: 18px;
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    font-size: 20px;
     font-weight: bold;
-    color: #666;
+    color: #999;
+    opacity: .35;
 }
 
 .title {
