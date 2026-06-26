@@ -81,7 +81,7 @@ author_profile: true
 
 <script>
 async function loadBookList() {
-    const response = await fetch("{{ base_path }}/files/read_list.csv");
+    const response = await fetch("/files/read_list.csv");
     const csv = await response.text();
 
     let books = Papa.parse(csv, {
@@ -93,37 +93,36 @@ async function loadBookList() {
         .filter(b => b.activity && b.activity.trim() === "Borrowed")
         .filter(b => b.isbn);
 
-    // remove duplicate ISBN
     books = [...new Map(
         books.map(b => [b.isbn, b])
     ).values()];
-
-    // newest first
+    
     books.sort((a, b) =>
         new Date(b.timestamp) - new Date(a.timestamp)
     );
 
     const html = books.map((b, i) =>
         '<div class="book-card">' +
-            '<img class="cover" src="' + b.cover + '" alt="book cover" loading="lazy">' +
-            '<div class="info">' +
-                '<div class="title">' + (b.title || '') + '</div>' +
-                '<div><i>' + (b.author || '') + '</i></div>' +
-                '<div><b>Read:</b> ' + formatDate(b.timestamp) + '</div>' +
-            '</div>' +
-            '<div class="number">' + (books.length - i) + '</div>' +
+        '<img class="cover" src="' + b.cover + '" alt="book cover" loading="lazy">' +
+        '<div class="info">' +
+        '<div class="title">' + (b.title || '') + '</div>' +
+        '<div><i>' + (b.author || '') + '</i></div>' +
+        '<div><b>Read:</b> ' + formatDate(b.timestamp) + '</div>' +
+        '</div>' +
+        '<div class="number">' + (books.length - i) + '</div>' +
         '</div>'
     ).join("");
+
     document.getElementById("book-list").innerHTML = html;
 }
 
 function formatDate(timestamp) {
     if (!timestamp) return "";
-    return timestamp.split(" ")[0] + " " +
-           timestamp.split(" ")[1] + " " +
-           timestamp.split(" ")[2];
+
+    const parts = timestamp.split(" ");
+    return parts.length >= 3 ? parts.slice(0, 3).join(" ") : timestamp;
 }
 
 loadBookList();
-
 </script>
+
