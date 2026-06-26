@@ -103,27 +103,25 @@ async function loadBookList() {
         new Date(b.timestamp) - new Date(a.timestamp)
     );
 
-    const html = books.map((b, i) => `
-        <div class="book-card">
-
-            <img class="cover"
-                    src="${b.cover}"
-                    alt="${b.title || 'book cover'}"
-                    loading="lazy">
-
-            <div class="info">
-                <div class="title">${b.title || ''}</div>
-                <div><b>Author:</b> ${b.author || ''}</div>
-                <div><b>Publisher:</b> ${b.publisher || ''}</div>
-                <div><b>ISBN:</b> ${b.isbn || ''}</div>
-                <div><b>Read:</b> ${b.timestamp || ''}</div>
-            </div>
-
-            <div class="number">${books.length - i}</div>
-
-        </div>
-    `).join("");
+    const html = books.map((b, i) =>
+        '<div class="book-card">' +
+            '<img class="cover" src="' + b.cover + '" alt="book cover" loading="lazy">' +
+            '<div class="info">' +
+                '<div class="title">' + (b.title || '') + '</div>' +
+                '<div><i>' + (b.author || '') + '</i></div>' +
+                '<div><b>Read:</b> ' + formatDate(b.timestamp) + '</div>' +
+            '</div>' +
+            '<div class="number">' + (books.length - i) + '</div>' +
+        '</div>'
+    ).join("");
     document.getElementById("book-list").innerHTML = html;
+}
+
+function formatDate(timestamp) {
+    if (!timestamp) return "";
+    return timestamp.split(" ")[0] + " " +
+           timestamp.split(" ")[1] + " " +
+           timestamp.split(" ")[2];
 }
 
 loadBookList();
