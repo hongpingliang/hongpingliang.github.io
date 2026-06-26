@@ -46,7 +46,6 @@ author_profile: true
 .title {
     font-size: 28px;
     font-weight: bold;
-    margin-bottom: 12px;
 }
 
 .number {
@@ -96,7 +95,7 @@ async function loadBookList() {
     books = [...new Map(
         books.map(b => [b.isbn, b])
     ).values()];
-    
+
     books.sort((a, b) =>
         new Date(b.timestamp) - new Date(a.timestamp)
     );
