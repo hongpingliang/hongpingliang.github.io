@@ -8,14 +8,7 @@
 #      Markdown formatted page while the second is generated using JSON.
 
 main:
-  # - title: "Publications"
-  #   url: /publications/
 
-  # - title: "Talks"
-  #   url: /talks/    
-    
-  # - title: "Portfolio"
-  #   url: /portfolio/
 
   - title: "Fractal"
     url: /fractal/
@@ -31,14 +24,3 @@ main:
 
   - title: "Reading"
     url: /reading/
-
-
-  # - title: "Teaching"
-  #   url: /fractal2/    
-
-
-  # - title: "CV"
-  #   url: /cv-json/
-    
-  # - title: "Guide"
-  #   url: /markdown/
