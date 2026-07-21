@@ -8,6 +8,7 @@ import shutil
 from shapely.geometry import LineString
 import gzip
 import fitdecode
+import json
 import xml.etree.ElementTree as ET
 
 class GpxRouteImage:
@@ -102,17 +103,89 @@ class GpxRouteImage:
                 continue
 
             if inputActivity.endswith(".gz"):
-                gpx_file = os.path.join(self.out_dir, "activities", f'{row["Activity ID"]}.gpx')
-                if not os.path.exists(gpx_file):
-                    self.fit_to_gpx(inputActivity, gpx_file)
+                jsonfile = os.path.join(self.out_dir, "activities", f'{row["Activity ID"]}.json')
+                gpxFile = os.path.join(self.out_dir, "activities", f'{row["Activity ID"]}.gpx')
+                if not os.path.exists(jsonfile):
+                    self.fit_to_json(inputActivity, jsonfile)
+                if not os.path.exists(gpxFile):
+                    self.fit_to_gpx(inputActivity, gpxFile)
             elif inputActivity.endswith(".gpx"):
                 if not os.path.exists(inputActivity):
                     os.makedirs(os.path.dirname(inputActivity), exist_ok=True)
                     shutil.copy2(inputActivity, inputActivity)
                     print(f"Copied: {inputActivity} -> {inputActivity}")
 
-            png = os.path.join(self.out_dir, "png",  f'{row["Activity ID"]}.png')
-            self.draw_route(inputActivity, png, row["Activity Name"], str(row["Activity Date"]).split()[0], float(row["Distance"]) * 0.621371 )
+            # png = os.path.join(self.out_dir, "png",  f'{row["Activity ID"]}.png')
+            # self.draw_route(inputActivity, png, row["Activity Name"], str(row["Activity Date"]).split()[0], float(row["Distance"]) * 0.621371 )
+
+    def fit_to_json(self, gz_file, json_file):
+        recs=[];hr=[];cad=[];spd=[];alt=[];pwr=[]
+
+        with gzip.open(gz_file,"rb") as f, fitdecode.FitReader(f) as fit:
+            for frame in fit:
+                if not isinstance(frame, fitdecode.FitDataMessage) or frame.name!="record":
+                    continue
+
+                r={}
+                for fld in frame.fields:
+                    if fld.name in (
+                        "timestamp",
+                        "position_lat","position_long",
+                        "distance",
+                        "heart_rate",
+                        "cadence",
+                        "enhanced_speed","speed",
+                        "enhanced_altitude","altitude",
+                        "power"
+                    ):
+                        r[fld.name]=fld.value
+
+                # Convert Garmin semicircles to latitude/longitude
+                if "position_lat" in r:
+                    r["lat"]=r.pop("position_lat")*180/2**31
+                if "position_long" in r:
+                    r["lon"]=r.pop("position_long")*180/2**31
+
+                s=r.get("enhanced_speed",r.get("speed"))
+                if s:
+                    r["pace_min_mi"]=round(26.8224/s,2)
+                    spd.append(s)
+
+                if "heart_rate" in r: hr.append(r["heart_rate"])
+                if "cadence" in r: cad.append(r["cadence"])
+                if "power" in r: pwr.append(r["power"])
+
+                elev=r.get("enhanced_altitude",r.get("altitude"))
+                if elev is not None:
+                    alt.append(elev)
+                    r["elevation"]=elev
+
+                recs.append(r)
+
+        out={
+            "summary":{
+                "avg_hr":round(sum(hr)/len(hr),1) if hr else None,
+                "max_hr":max(hr) if hr else None,
+                "avg_cadence":round(sum(cad)/len(cad),1) if cad else None,
+                "max_cadence":max(cad) if cad else None,
+                "avg_speed_mps":round(sum(spd)/len(spd),2) if spd else None,
+                "max_speed_mps":round(max(spd),2) if spd else None,
+                "avg_pace_min_mi":round(26.8224/(sum(spd)/len(spd)),2) if spd else None,
+                "best_pace_min_mi":round(26.8224/max(spd),2) if spd else None,
+                "min_elevation":round(min(alt),1) if alt else None,
+                "max_elevation":round(max(alt),1) if alt else None,
+                "gain":round(sum(max(0,b-a) for a,b in zip(alt,alt[1:])),1) if len(alt)>1 else 0,
+                "loss":round(sum(max(0,a-b) for a,b in zip(alt,alt[1:])),1) if len(alt)>1 else 0,
+                "avg_power":round(sum(pwr)/len(pwr),1) if pwr else None,
+                "max_power":max(pwr) if pwr else None
+            },
+            "records":recs
+        }
+
+        with open(json_file,"w") as f:
+            json.dump(out,f,indent=2,default=str)
+
+        print(f"Wrote {json_file}")
 
     def fit_to_gpx(self, fit_gz_file, gpx_file):
         SEMICIRCLE_TO_DEG = 180.0 / 2147483648.0
