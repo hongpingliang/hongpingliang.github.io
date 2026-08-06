@@ -120,8 +120,12 @@ class ColorPallet {
 	
 	init() {
 		this.colors = [new RGB(255, 0, 0, 1), new RGB(51, 255, 51, 1), new RGB(102, 102, 255, 1), new RGB(255, 255, 0, 1)];
-		this.randomColors = new Array(16).fill(0).map((_, i) => i === 0 ? '#000' : `#${((1 << 24) * Math.random() | 0).toString(16)}`)
+		this.resetRandomColors();
 		this.initRainbowColors();
+	}
+
+	resetRandomColors() {
+		this.randomColors = new Array(16).fill(0).map((_, i) => i === 0 ? '#000' : `#${((1 << 24) * Math.random() | 0).toString(16)}`)
 	}
 	
 	lagrange ([X1, Y1], [X2, Y2], x) {
@@ -779,7 +783,7 @@ class FractalFactory {
 		_config = new Config(canvas, controlsDiv, true);
 		_config.init();
 		return _config;
-	}	
+	}
 
 	static getIFS(canvas, controlsDiv) {
 		if ( _fractalIFS ) {
@@ -813,16 +817,16 @@ class FractalFactory {
 		return _fractalDNA;
 	}	
 
-	static getMandelbrot() {
+	static getMandelbrot(canvas, controlsDiv) {
 		if ( _fractalMandelbrot ) {
 			return _fractalMandelbrot;
 		}
 
-		_fractalMandelbrot = new Mandelbrot(FractalFactory.getConfig());
+		_fractalMandelbrot = new Mandelbrot(FractalFactory.getConfig(canvas, controlsDiv));
 		_fractalMandelbrot.init();
 		return _fractalMandelbrot;
 	}
-	
+
 	static getColorPallet() {
 		if ( _colorPallet ) {
 			return _colorPallet;
@@ -2370,8 +2374,8 @@ class Index {
 	}	
 	
 	static init(canvas, controlsDiv) {		
-		var fractal = FractalFactory.getIFS(canvas, controlsDiv);
-//		var fractal = FractalFactory.getMandelbrot();
+//		var fractal = FractalFactory.getIFS(canvas, controlsDiv);
+		var fractal = FractalFactory.getMandelbrot(canvas, controlsDiv);
 //		var fractal = FractalFactory.getDNA();
 //		var fractal = FractalFactory.getChaosGame();
 		Index.setCurrentFractal(fractal);
@@ -2454,10 +2458,11 @@ class Index {
 		chaosGame.numOfVertices = numOfVertices;
 		chaosGame.draw();
 	}
-	
+
 	static drawMandelbrot() {
 		var m = FractalFactory.getMandelbrot();
 		Index.setCurrentFractal(m)
+		FractalFactory.getColorPallet().resetRandomColors();
 		m.draw();
 	}
 	
