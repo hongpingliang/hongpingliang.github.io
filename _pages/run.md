@@ -17,6 +17,11 @@ author_profile: true
 .leaflet-control-layers input,.leaflet-control-layers input[type=radio]{display:inline-block!important;vertical-align:middle;margin:0 4px 0 0!important;position:static!important;float:none!important;}
 .leaflet-control-layers span{display:inline!important;vertical-align:middle;}
 .leaflet-control-layers-list{padding:2px 0;}
+
+.run-map-title,.run-map-footer{position:absolute;left:50%;transform:translateX(-50%);z-index:1000;text-align:center;font-weight:800;color:white;-webkit-text-stroke:1px #1976D2;text-shadow:2px 2px 4px black;pointer-events:none;white-space:nowrap}
+.run-map-title{top:20px;font-size:36px}
+.run-map-footer{bottom:25px;font-size:22px}
+@media(max-width:600px){.run-map-title{top:15px;font-size:24px;max-width:90%;white-space:normal}.run-map-footer{bottom:15px;font-size:16px}}
 </style>
 
 <br/>
@@ -54,10 +59,11 @@ window.addEventListener("load",function(){
                     return;
                 }
 
+                const runName = run["Activity Name"]
                 const miles=(parseFloat(run["Distance"])*0.621371).toFixed(1);
                 const date=run["Activity Date"].split(" ").slice(0,3).join(" ");
 
-                document.getElementById("run-title").innerHTML=run["Activity Name"];
+                document.getElementById("run-title").innerHTML=runName;
                 document.getElementById("run-subtitle").innerHTML=
                     "<span'>"+miles+" miles</span>"+
                     "<span style='margin-left:80px;'> "+date+"</span>";
@@ -67,7 +73,7 @@ window.addEventListener("load",function(){
                         '.png" alt="Route Map" ' +
                         'style="width:100%;height:auto;border-radius:12px;display:block;">';
                 } else {
-                    showMap(activityId);
+                    showMap(activityId, runName, miles, date);
                 }
             }
         });
@@ -75,17 +81,17 @@ window.addEventListener("load",function(){
 
 });
 
-function showMap(id) {
+function showMap(id, runName, miles, date) {
     const map = L.map("run-map").setView([0, 0], 2);
 
     const osm = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        maxZoom: 19, attribution: "&copy; OpenStreetMap"
-    }).addTo(map);
+        maxZoom: 19, attribution: "&copy;"
+    });
 
     const satellite = L.tileLayer(
         "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
-        { maxZoom: 19, attribution: "&copy; Esri" }
-    );
+        { maxZoom: 19, attribution: "&copy;" }
+    ).addTo(map);
 
     new L.GPX("/files/runs/activities/" + id + ".gpx", {
         async: true,
@@ -108,6 +114,8 @@ function showMap(id) {
         { collapsed: false }
     ).addTo(map);
 
+    addRunInfoLayer(map, runName, miles, date);
+
     gpx.on("loaded", e => {
         const b = e.target.getBounds();
         b.isValid() ? map.fitBounds(b, { padding: [20, 20] })
@@ -115,5 +123,35 @@ function showMap(id) {
     });
 
     gpx.on("error", e => console.log("GPX error", e));
+}
+
+// Custom run information layer
+function addRunInfoLayer(map, runName, miles, date) {
+    const container = map.getContainer();
+
+    // Ensure absolute positioning works
+    container.style.position = "relative";
+
+    // Top center: run name
+    const title = L.DomUtil.create(
+        "div",
+        "run-map-title",
+        container
+    );
+
+    title.textContent = runName;
+
+    // Bottom center: miles and date
+    const footer = L.DomUtil.create(
+        "div",
+        "run-map-footer",
+        container
+    );
+
+    footer.textContent = `${miles} miles  |  ${date}`;
+
+    // Prevent map interactions when clicking the overlay
+    L.DomEvent.disableClickPropagation(title);
+    L.DomEvent.disableClickPropagation(footer);
 }
 </script>
