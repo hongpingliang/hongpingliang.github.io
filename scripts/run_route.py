@@ -68,13 +68,21 @@ class GpxRouteImage:
         ax.set_xlim(min(x) - pad, max(x) + pad)
         ax.set_ylim(min(y) - pad, max(y) + pad)
 
+        # ctx.add_basemap(
+        #     ax,
+        #     crs=gdf.crs,
+        #     source=ctx.providers.OpenStreetMap.Mapnik,
+        #     zoom="auto",
+        #     reset_extent=False,
+        # )
+
         ctx.add_basemap(
             ax,
             crs=gdf.crs,
-            source=ctx.providers.OpenStreetMap.Mapnik,
+            source=ctx.providers.Esri.WorldImagery,
             zoom="auto",
             reset_extent=False,
-        )
+        )        
 
         ax.plot(x, y, color="white", linewidth=5, solid_capstyle="round", solid_joinstyle="round", zorder=3)
         ax.plot(x, y, color="#1976D2", linewidth=3, solid_capstyle="round", solid_joinstyle="round", zorder=4)
