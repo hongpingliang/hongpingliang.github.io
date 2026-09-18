@@ -63,11 +63,11 @@ window.addEventListener("load",function(){
                 const miles=(parseFloat(run["Distance"])*0.621371).toFixed(1);
                 const date=run["Activity Date"].split(" ").slice(0,3).join(" ");
 
-                document.getElementById("run-title").innerHTML=runName;
-                document.getElementById("run-subtitle").innerHTML=
-                    "<span'>"+miles+" miles</span>"+
-                    "<span style='margin-left:80px;'> "+date+"</span>";
                 if (!run["Filename"]) {
+                    document.getElementById("run-title").innerHTML=runName;
+                    document.getElementById("run-subtitle").innerHTML=
+                        "<span'>"+miles+" miles</span>"+
+                        "<span style='margin-left:80px;'> "+date+"</span>";
                     document.getElementById("run-map").innerHTML =
                         '<img src="/files/runs/png/' + activityId +
                         '.png" alt="Route Map" ' +

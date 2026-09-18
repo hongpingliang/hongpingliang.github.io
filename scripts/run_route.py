@@ -99,7 +99,7 @@ class GpxRouteImage:
             fn = os.path.normpath(str(row["Filename"]).strip())
             inputActivity = os.path.join(self.input_dir, fn)
             if not os.path.exists(inputActivity):
-                print(f"Missing: {inputActivity}")
+                print(f"{row["Activity ID"]} Missing: {inputActivity}")
                 continue
 
             if inputActivity.endswith(".gz"):
@@ -115,8 +115,9 @@ class GpxRouteImage:
                     shutil.copy2(inputActivity, inputActivity)
                     print(f"Copied: {inputActivity} -> {inputActivity}")
 
-            # png = os.path.join(self.out_dir, "png",  f'{row["Activity ID"]}.png')
-            # self.draw_route(inputActivity, png, row["Activity Name"], str(row["Activity Date"]).split()[0], float(row["Distance"]) * 0.621371 )
+            png = os.path.join(self.out_dir, "png",  f'{row["Activity ID"]}.png')
+            if not os.path.exists(png):
+                self.draw_route(inputActivity, png, row["Activity Name"], str(row["Activity Date"]).split()[0], float(row["Distance"]) * 0.621371 )
 
     def fit_to_json(self, gz_file, json_file):
         recs=[];hr=[];cad=[];spd=[];alt=[];pwr=[]
@@ -248,7 +249,7 @@ class GpxRouteImage:
         print(f"Created {gpx_file}")
 
 if __name__ == "__main__":
-    GpxRouteImage(r"C:\Users\liangh\Desktop\New folder\run_route", r"C:\Users\liangh\Desktop\git\hongpingliang.github.io\files\runs").run()
+    GpxRouteImage(r"C:\Users\liangh\Desktop\export_112084103", r"C:\Users\liangh\Desktop\git\hongpingliang.github.io\files\runs").run()
     # import contextily as ctx
     # import matplotlib.pyplot as plt
 

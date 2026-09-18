@@ -57,7 +57,7 @@ fetch("/files/runs/activities.csv").then(r=>r.text()).then(csv=>{
    <canvas id="c${y}" height="110"></canvas>
    <table style="width:100%;margin-top:20px;border-collapse:collapse">
     <tr style="background:#1976d2;color:#fff"><th>Month</th><th>Miles</th></tr>
-    ${M.slice(0,y==2026?6:12).map((m,i)=>`<tr style="background:${i%2?"#f7f7f7":"#fff"}"><td style="padding:6px">${m}</td><td style="padding:6px;text-align:right">${data[y].months[m].toFixed(1)}</td></tr>`).join("")}
+    ${M.slice(0,y==2026?9:12).map((m,i)=>`<tr style="background:${i%2?"#f7f7f7":"#fff"}"><td style="padding:6px">${m}</td><td style="padding:6px;text-align:right">${data[y].months[m].toFixed(1)}</td></tr>`).join("")}
     <tr style="font-weight:bold;background:#eee"><td style="padding:6px">Total</td><td style="padding:6px;text-align:right">${data[y].total.toFixed(1)}</td></tr>
    </table>
   </div>`;
