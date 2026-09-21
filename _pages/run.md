@@ -123,16 +123,11 @@ function showMap(id, runName, miles, date) {
     });
 
     gpx.on("error", e => console.log("GPX error", e));
-}
+};
 
-// Custom run information layer
 function addRunInfoLayer(map, runName, miles, date) {
     const container = map.getContainer();
-
-    // Ensure absolute positioning works
     container.style.position = "relative";
-
-    // Top center: run name
     const title = L.DomUtil.create(
         "div",
         "run-map-title",
@@ -141,7 +136,6 @@ function addRunInfoLayer(map, runName, miles, date) {
 
     title.textContent = runName;
 
-    // Bottom center: miles and date
     const footer = L.DomUtil.create(
         "div",
         "run-map-footer",
@@ -150,7 +144,6 @@ function addRunInfoLayer(map, runName, miles, date) {
 
     footer.textContent = `${miles} miles  |  ${date}`;
 
-    // Prevent map interactions when clicking the overlay
     L.DomEvent.disableClickPropagation(title);
     L.DomEvent.disableClickPropagation(footer);
 }
