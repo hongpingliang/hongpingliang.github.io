@@ -59,7 +59,7 @@ window.addEventListener("load",function(){
                     return;
                 }
 
-                const runName = run["Activity Name"]
+                const runName = run["Activity Name"];
                 const miles=(parseFloat(run["Distance"])*0.621371).toFixed(1);
                 const date=run["Activity Date"].split(" ").slice(0,3).join(" ");
 
