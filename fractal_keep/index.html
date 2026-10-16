@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<meta charset="utf-8" lang="us" > 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Fractal</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script src="ifs.js" type="text/javascript"></script>
+<script src="index.js" type="text/javascript"></script>
+<script src="config.js" type="text/javascript"></script>
+<script src="fractal.js" type="text/javascript"></script>
+<script src="fractal_ifs.js" type="text/javascript"></script>
+<script src="fractal_mandelbrot.js" type="text/javascript"></script>
+<script src="fractal_chaos_game.js" type="text/javascript"></script>
+<script src="fractal_dna.js" type="text/javascript"></script>
+<script src="data.js" type="text/javascript"></script>
+<script src="util.js" type="text/javascript"></script>
+<script src="matrix.js" type="text/javascript"></script>
+<script src="fractal_factory.js" type="text/javascript"></script>
+<script src="color_config.js" type="text/javascript"></script>
+<script src="worker.js" type="text/javascript"></script>
+<script src="ifs_data.js" type="text/javascript"></script>
+
+
+</head>
+<body onload="Index.init();">
+<form class="form-inline">
+<br/>
+<div class="container-fluid">
+
+<div class="row">
+ 
+<div class="col">
+	<canvas style="border-style: solid;" id="fractal_canvas" width="400" height="400"></canvas>
+
+	<br/>
+		<button value="Color" onclick="Index.resize();" type="button" class="btn btn-outline-primary">reSize</button>
+		  &nbsp; 
+	  <input type="text" value="300" size="2" class="form-control mb-2 mr-sm-2" placeholder="width" id="width">
+      <input type="text" value="300" size="2" class="form-control mb-2 mr-sm-2" placeholder="height" id="height">
+      &nbsp; &nbsp; 
+      <label class="checkbox-inline"><input type="checkbox" checked="checked" onclick="Index.setSingleColor();">Multi Color</label>  
+
+	<div class="btn-group">
+		<button onclick="Index.updateIFSValue(-1);" type="button" class="btn btn-outline-info">-</button><br/>
+		<button onclick="Index.updateIFSValue(1);" type="button" class="btn btn-outline-info">+</button><br/>
+		<button onclick="Index.animateIFS();" type="button" class="btn btn-outline-info">Animate</button><br/>
+	</div>	
+	<div class="container-fluid" id="control_ui"></div>
+	
+	
+	<br/>
+	Color: 
+	<div class="btn-group">
+		<button value="Color" onclick="Index.setGraphColor(1, new RGB(255, 255, 255, 1.0));" type="button" class="btn btn-outline-info">White</button>
+		<button value="Color" onclick="Index.setGraphColor(1, new RGB(0, 0, 0, 1.0));" type="button" class="btn btn-outline-info">Black</button>
+		<button value="Color" onclick="Index.setGraphColor(1, new RGB(0, 0, 255, 1.0));" type="button" class="btn btn-outline-info">Blue</button>
+		<button value="Color" onclick="Index.setGraphColor(2);" type="button" class="btn btn-outline-info">Image</button>
+		<button value="Color" onclick="Index.setGraphColor(3);" type="button" class="btn btn-outline-info">Gradient</button>
+	</div>
+	<br/>
+	
+	Background:
+	<div class="btn-group">
+		<button value="Color" onclick="Index.setBgColor(1, new RGB(0, 0, 0, 1.0));" type="button" class="btn btn-outline-info">Black</button>
+		<button value="Color" onclick="Index.setBgColor(1, new RGB(255, 255, 255, 1.0));" type="button" class="btn btn-outline-info">White</button>
+		<button value="Color" onclick="Index.setBgColor(2);" type="button" class="btn btn-outline-info">Image</button>
+		<button value="Color" onclick="Index.setBgColor(3);" type="button" class="btn btn-outline-info">Gradient</button>
+	</div>
+	<br/>
+	
+	<div class="btn-group">
+		<button onclick="Index.drawMandelbrot();" type="button" class="btn btn-outline-info">Mandelbrot</button><br/>
+		<button onclick="Index.drawDNA();" type="button" class="btn btn-outline-info">DNA</button><br/>
+	</div>
+	<br/>
+	
+	<div class="btn-group">
+		<button onclick="Index.setNumOfVertices(3);" type="button" class="btn btn-outline-info">Chaos: 3</button><br/>
+		<button onclick="Index.setNumOfVertices(4);" type="button" class="btn btn-outline-info">Chaos: 4</button><br/>
+		<button onclick="Index.setNumOfVertices(41);" type="button" class="btn btn-outline-info">Chaos: 4a</button><br/>
+		<button onclick="Index.setNumOfVertices([new Point(10, 10), new Point(10, 280), new Point(280, 280)]);" type="button" class="btn btn-outline-info">Chaos</button><br/>
+		<button onclick="Index.setNumOfVertices([]);" type="button" class="btn btn-outline-info">Click</button><br/>
+	</div>
+	<br/>
+	<div class="btn-group">
+		<button onclick="Index.setNumOfVertices(5);" type="button" class="btn btn-outline-info">Chaos 5</button><br/>
+		<button onclick="Index.setNumOfVertices(6);" type="button" class="btn btn-outline-info">Chaos 6</button><br/>
+		<button onclick="Index.setNumOfVertices(7);" type="button" class="btn btn-outline-info">Chaos 7</button><br/>
+		<button onclick="Index.setNumOfVertices(8);" type="button" class="btn btn-outline-info">Chaos 8</button><br/>
+		<button onclick="Index.setNumOfVertices(12);" type="button" class="btn btn-outline-info">Chao2 12</button><br/>
+	</div>
+
+	<br>
+	<input type="file"  accept="image/*" id="forefile"  onchange="Index.loadImage(event, 'foregroundImage')" style="display: none;"/>
+	<label for="forefile" style="cursor: pointer;">Upload Foreground Image</label>
+	
+	<canvas style="border-style: solid;" id="foregroundImage" width="10" height="10"></canvas>
+	
+	<br>
+	<input type="file"  accept="image/*" id="backfile"  onchange="Index.loadImage(event, 'backgroundImage')" style="display: none;"/>
+	<label for="backfile" style="cursor: pointer;">Upload Background Image</label>
+	
+	<canvas style="border-style: solid;" id="backgroundImage" width="10" height="10"></canvas>
+
+
+</div>
+<div class="col">
+
+	<div class="container-fluid" id="ifs_list"></div>
+	<br/>
+	
+</div>
+	
+	
+
+</div>
+</div>
+
+
+</form>	
+</body>
+</html>
